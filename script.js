@@ -1,5 +1,8 @@
-var data = [89, 5, 3, 54, 23];
+const search = document.querySelector(".search");
+const btn = document.querySelector(".btn");
+const input = document.querySelector(".input");
 
-for (a = 1; a <= 5; a++) {
-  console.log(data);
-}
+btn.addEventListener("click", () => {
+  search.classList.toggle("active");
+  input.focus();
+});
